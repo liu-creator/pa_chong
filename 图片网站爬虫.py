@@ -28,8 +28,8 @@ for page in range(1, 6):
         file_name = alist[1]
         #       print(html_url,file_name)
 
-        if not os.path.exists(r'D:\\电脑桌面\\编程\\img\\' + file_name):
-            os.mkdir(r'D:\\电脑桌面\\编程\\img\\' + file_name)
+        if not os.path.exists(r'D:\\电脑桌面\\编程\\img3\\' + file_name):
+            os.mkdir(r'D:\\电脑桌面\\编程\\img3\\' + file_name)
         print('正在下载：', file_name)
 
         #     发送详情页请求，解析总页数
@@ -50,7 +50,7 @@ for page in range(1, 6):
             img_data = requests.get(img_url, headers=headers).content
             img_name = str(url) + '.jpg'
 
-            with open(r'D:\\电脑桌面\\编程\\img\\{}\\'.format(file_name) + img_name, 'wb') as f:
+            with open(r'D:\\电脑桌面\\编程\\img3\\{}\\'.format(file_name) + img_name, 'wb') as f:
                 print('下载完成：', img_name)
                 f.write(img_data)
 print('下载完成！！！')
