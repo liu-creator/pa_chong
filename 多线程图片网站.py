@@ -37,8 +37,8 @@ def func():
             file_name = alist[1]
             #       print(html_url,file_name)
 
-            if not os.path.exists(r'D:\\电脑桌面\\编程\\img3\\' + file_name):
-                os.mkdir(r'D:\\电脑桌面\\编程\\img3\\' + file_name)
+            if not os.path.exists(r'D:\电脑桌面\编程\img3\' + file_name):
+                os.mkdir(r'D:\电脑桌面\编程\img3\' + file_name)
             print('正在下载：', file_name)
 
             #     发送详情页请求，解析总页数
